@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F3E598D1D41184A0036E8F2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3E598C1D41184A0036E8F2 /* Realm.framework */; };
+		1F3E598E1D41184A0036E8F2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3E598C1D41184A0036E8F2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F3E599E1D415AFC0036E8F2 /* checkbox_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E599C1D415AFC0036E8F2 /* checkbox_bg.png */; };
+		1F3E599F1D415AFC0036E8F2 /* checkbox_hl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E599D1D415AFC0036E8F2 /* checkbox_hl.png */; };
+		1F5649FF1D3FFB36004C19EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5649FE1D3FFB36004C19EC /* main.m */; };
+		1F564A021D3FFB36004C19EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A011D3FFB36004C19EC /* AppDelegate.m */; };
+		1F564A051D3FFB36004C19EC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A041D3FFB36004C19EC /* MasterViewController.m */; };
+		1F564A081D3FFB36004C19EC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A071D3FFB36004C19EC /* DetailViewController.m */; };
+		1F564A0B1D3FFB36004C19EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A091D3FFB36004C19EC /* Main.storyboard */; };
+		1F564A0D1D3FFB36004C19EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A0C1D3FFB36004C19EC /* Assets.xcassets */; };
+		1F564A101D3FFB36004C19EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A0E1D3FFB36004C19EC /* LaunchScreen.storyboard */; };
+		1F564A181D3FFB86004C19EC /* img02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A171D3FFB86004C19EC /* img02.jpg */; };
+		1F564A1E1D3FFCDE004C19EC /* BaseProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A1A1D3FFCDE004C19EC /* BaseProfileCell.m */; };
+		1F564A1F1D3FFCDE004C19EC /* BaseProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A1B1D3FFCDE004C19EC /* BaseProfileCell.xib */; };
+		1F564A251D3FFD2B004C19EC /* RESTCalls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A221D3FFD2B004C19EC /* RESTCalls.m */; };
+		1F564A261D3FFD2B004C19EC /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A241D3FFD2B004C19EC /* Utilities.m */; };
+		1F564A281D3FFE55004C19EC /* capturedJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A271D3FFE55004C19EC /* capturedJSON.txt */; };
+		1F564A2C1D3FFFD3004C19EC /* TextViewProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A2A1D3FFFD3004C19EC /* TextViewProfileCell.m */; };
+		1F564A2F1D40038A004C19EC /* Shrimp153.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A2E1D40038A004C19EC /* Shrimp153.png */; };
+		1F564A571D401846004C19EC /* TextViewProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A561D401846004C19EC /* TextViewProfileCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F3E598F1D41184A0036E8F2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F3E598E1D41184A0036E8F2 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F3E598C1D41184A0036E8F2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		1F3E599C1D415AFC0036E8F2 /* checkbox_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_bg.png; sourceTree = "<group>"; };
+		1F3E599D1D415AFC0036E8F2 /* checkbox_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_hl.png; sourceTree = "<group>"; };
+		1F5649FA1D3FFB36004C19EC /* TelmedIQApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelmedIQApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5649FE1D3FFB36004C19EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F564A001D3FFB36004C19EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F564A011D3FFB36004C19EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F564A031D3FFB36004C19EC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		1F564A041D3FFB36004C19EC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		1F564A061D3FFB36004C19EC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1F564A071D3FFB36004C19EC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1F564A0A1D3FFB36004C19EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F564A0C1D3FFB36004C19EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F564A0F1D3FFB36004C19EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F564A111D3FFB36004C19EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F564A171D3FFB86004C19EC /* img02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img02.jpg; sourceTree = "<group>"; };
+		1F564A191D3FFCDE004C19EC /* BaseProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProfileCell.h; sourceTree = "<group>"; };
+		1F564A1A1D3FFCDE004C19EC /* BaseProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseProfileCell.m; sourceTree = "<group>"; };
+		1F564A1B1D3FFCDE004C19EC /* BaseProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseProfileCell.xib; sourceTree = "<group>"; };
+		1F564A211D3FFD2B004C19EC /* RESTCalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTCalls.h; sourceTree = "<group>"; };
+		1F564A221D3FFD2B004C19EC /* RESTCalls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTCalls.m; sourceTree = "<group>"; };
+		1F564A231D3FFD2B004C19EC /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		1F564A241D3FFD2B004C19EC /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		1F564A271D3FFE55004C19EC /* capturedJSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = capturedJSON.txt; sourceTree = "<group>"; };
+		1F564A291D3FFFD3004C19EC /* TextViewProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewProfileCell.h; sourceTree = "<group>"; };
+		1F564A2A1D3FFFD3004C19EC /* TextViewProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewProfileCell.m; sourceTree = "<group>"; };
+		1F564A2E1D40038A004C19EC /* Shrimp153.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shrimp153.png; sourceTree = "<group>"; };
+		1F564A561D401846004C19EC /* TextViewProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewProfileCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F5649F71D3FFB36004C19EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F3E598D1D41184A0036E8F2 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F3E59951D41583F0036E8F2 /* 3rd party */ = {
+			isa = PBXGroup;
+			children = (
+				1F3E598C1D41184A0036E8F2 /* Realm.framework */,
+			);
+			name = "3rd party";
+			sourceTree = "<group>";
+		};
+		1F3E59961D4158550036E8F2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1F3E599C1D415AFC0036E8F2 /* checkbox_bg.png */,
+				1F3E599D1D415AFC0036E8F2 /* checkbox_hl.png */,
+				1F564A2E1D40038A004C19EC /* Shrimp153.png */,
+				1F564A171D3FFB86004C19EC /* img02.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		1F3E59971D4158620036E8F2 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F564A191D3FFCDE004C19EC /* BaseProfileCell.h */,
+				1F564A1A1D3FFCDE004C19EC /* BaseProfileCell.m */,
+				1F564A1B1D3FFCDE004C19EC /* BaseProfileCell.xib */,
+				1F564A291D3FFFD3004C19EC /* TextViewProfileCell.h */,
+				1F564A2A1D3FFFD3004C19EC /* TextViewProfileCell.m */,
+				1F564A561D401846004C19EC /* TextViewProfileCell.xib */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		1F5649F11D3FFB36004C19EC = {
+			isa = PBXGroup;
+			children = (
+				1F5649FC1D3FFB36004C19EC /* TelmedIQApp */,
+				1F3E59951D41583F0036E8F2 /* 3rd party */,
+				1F5649FB1D3FFB36004C19EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F5649FB1D3FFB36004C19EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F5649FA1D3FFB36004C19EC /* TelmedIQApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F5649FC1D3FFB36004C19EC /* TelmedIQApp */ = {
+			isa = PBXGroup;
+			children = (
+				1F3E59971D4158620036E8F2 /* Custom Cells */,
+				1F564A211D3FFD2B004C19EC /* RESTCalls.h */,
+				1F564A221D3FFD2B004C19EC /* RESTCalls.m */,
+				1F564A231D3FFD2B004C19EC /* Utilities.h */,
+				1F564A241D3FFD2B004C19EC /* Utilities.m */,
+				1F564A001D3FFB36004C19EC /* AppDelegate.h */,
+				1F564A011D3FFB36004C19EC /* AppDelegate.m */,
+				1F564A031D3FFB36004C19EC /* MasterViewController.h */,
+				1F564A041D3FFB36004C19EC /* MasterViewController.m */,
+				1F564A061D3FFB36004C19EC /* DetailViewController.h */,
+				1F564A071D3FFB36004C19EC /* DetailViewController.m */,
+				1F564A091D3FFB36004C19EC /* Main.storyboard */,
+				1F564A0E1D3FFB36004C19EC /* LaunchScreen.storyboard */,
+				1F564A111D3FFB36004C19EC /* Info.plist */,
+				1F564A271D3FFE55004C19EC /* capturedJSON.txt */,
+				1F564A0C1D3FFB36004C19EC /* Assets.xcassets */,
+				1F3E59961D4158550036E8F2 /* Images */,
+				1F5649FD1D3FFB36004C19EC /* Supporting Files */,
+			);
+			path = TelmedIQApp;
+			sourceTree = "<group>";
+		};
+		1F5649FD1D3FFB36004C19EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F5649FE1D3FFB36004C19EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F5649F91D3FFB36004C19EC /* TelmedIQApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F564A141D3FFB36004C19EC /* Build configuration list for PBXNativeTarget "TelmedIQApp" */;
+			buildPhases = (
+				1F5649F61D3FFB36004C19EC /* Sources */,
+				1F5649F71D3FFB36004C19EC /* Frameworks */,
+				1F5649F81D3FFB36004C19EC /* Resources */,
+				1F3E598F1D41184A0036E8F2 /* Embed Frameworks */,
+				1F3E59901D4119730036E8F2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelmedIQApp;
+			productName = TelmedIQApp;
+			productReference = 1F5649FA1D3FFB36004C19EC /* TelmedIQApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F5649F21D3FFB36004C19EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "John Spicer";
+				TargetAttributes = {
+					1F5649F91D3FFB36004C19EC = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 33GBEFVWKU;
+					};
+				};
+			};
+			buildConfigurationList = 1F5649F51D3FFB36004C19EC /* Build configuration list for PBXProject "TelmedIQApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F5649F11D3FFB36004C19EC;
+			productRefGroup = 1F5649FB1D3FFB36004C19EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F5649F91D3FFB36004C19EC /* TelmedIQApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F5649F81D3FFB36004C19EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F564A281D3FFE55004C19EC /* capturedJSON.txt in Resources */,
+				1F564A571D401846004C19EC /* TextViewProfileCell.xib in Resources */,
+				1F564A101D3FFB36004C19EC /* LaunchScreen.storyboard in Resources */,
+				1F564A0D1D3FFB36004C19EC /* Assets.xcassets in Resources */,
+				1F3E599E1D415AFC0036E8F2 /* checkbox_bg.png in Resources */,
+				1F564A2F1D40038A004C19EC /* Shrimp153.png in Resources */,
+				1F3E599F1D415AFC0036E8F2 /* checkbox_hl.png in Resources */,
+				1F564A1F1D3FFCDE004C19EC /* BaseProfileCell.xib in Resources */,
+				1F564A0B1D3FFB36004C19EC /* Main.storyboard in Resources */,
+				1F564A181D3FFB86004C19EC /* img02.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F3E59901D4119730036E8F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F5649F61D3FFB36004C19EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F564A021D3FFB36004C19EC /* AppDelegate.m in Sources */,
+				1F564A2C1D3FFFD3004C19EC /* TextViewProfileCell.m in Sources */,
+				1F564A051D3FFB36004C19EC /* MasterViewController.m in Sources */,
+				1F564A261D3FFD2B004C19EC /* Utilities.m in Sources */,
+				1F564A1E1D3FFCDE004C19EC /* BaseProfileCell.m in Sources */,
+				1F5649FF1D3FFB36004C19EC /* main.m in Sources */,
+				1F564A081D3FFB36004C19EC /* DetailViewController.m in Sources */,
+				1F564A251D3FFD2B004C19EC /* RESTCalls.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F564A091D3FFB36004C19EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F564A0A1D3FFB36004C19EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F564A0E1D3FFB36004C19EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F564A0F1D3FFB36004C19EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F564A121D3FFB36004C19EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F564A131D3FFB36004C19EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F564A151D3FFB36004C19EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TelmedIQApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = johnspicer.TelmedIQApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		1F564A161D3FFB36004C19EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TelmedIQApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = johnspicer.TelmedIQApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F5649F51D3FFB36004C19EC /* Build configuration list for PBXProject "TelmedIQApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F564A121D3FFB36004C19EC /* Debug */,
+				1F564A131D3FFB36004C19EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F564A141D3FFB36004C19EC /* Build configuration list for PBXNativeTarget "TelmedIQApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F564A151D3FFB36004C19EC /* Debug */,
+				1F564A161D3FFB36004C19EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F5649F21D3FFB36004C19EC /* Project object */;
+}
