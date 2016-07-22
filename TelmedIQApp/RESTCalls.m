@@ -10,6 +10,9 @@
 #import "RESTCalls.h"
 #import "AppDelegate.h"
 
+// client secret @"a400705770a8ead826560cd8f77f895afb5f2e0e";
+// client id @"4968c7396d51429";
+
 @implementation RESTCalls
 
 #pragma mark - API Request Methods that return data
@@ -28,9 +31,9 @@
     request.HTTPMethod = @"GET";
     
     // 'Authorization': 'Client-ID' '917fbe7adfae1b7'
-    NSDictionary *dict = [NSDictionary dictionaryWithObject:@"'Client-ID' '917fbe7adfae1b7'" forKey:@"'Authorization'"];
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:@"Client-ID 4968c7396d51429" forKey:@"Authorization"];
     [request setAllHTTPHeaderFields:dict];
-    DLog(@"getGalleryContents");
+    //DLog(@"getGalleryContents");
     
     // Create url connection and fire request
     NSHTTPURLResponse *response;

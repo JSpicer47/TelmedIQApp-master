@@ -80,7 +80,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    //[self configureView];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -93,6 +92,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Data Fetch
 
 // Fetch the image in the background
 //
@@ -151,21 +152,15 @@
             self.detailItem.myBigImage = data0;
             [realm commitWriteTransaction];
 
-            if (good == YES)
-            {
-                self.bigImage.image = goodImage;
-            }
-            else
-            {
-                self.bigImage.image = defaultImage;
-            }
-
+            self.bigImage.image = [UIImage imageWithData:data0];
             [self.view setNeedsDisplay];
             [self.active setHidden:YES];
         });
 
     });
 }
+
+#pragma mark - Action Methods
 
 - (IBAction)toggleFavorite:(id)sender
 {

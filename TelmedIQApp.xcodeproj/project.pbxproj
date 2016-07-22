@@ -11,6 +11,7 @@
 		1F3E598E1D41184A0036E8F2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3E598C1D41184A0036E8F2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F3E599E1D415AFC0036E8F2 /* checkbox_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E599C1D415AFC0036E8F2 /* checkbox_bg.png */; };
 		1F3E599F1D415AFC0036E8F2 /* checkbox_hl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E599D1D415AFC0036E8F2 /* checkbox_hl.png */; };
+		1F3E59A11D425DB50036E8F2 /* NSFW.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E59A01D425DB50036E8F2 /* NSFW.jpg */; };
 		1F5649FF1D3FFB36004C19EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5649FE1D3FFB36004C19EC /* main.m */; };
 		1F564A021D3FFB36004C19EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A011D3FFB36004C19EC /* AppDelegate.m */; };
 		1F564A051D3FFB36004C19EC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A041D3FFB36004C19EC /* MasterViewController.m */; };
@@ -24,9 +25,9 @@
 		1F564A251D3FFD2B004C19EC /* RESTCalls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A221D3FFD2B004C19EC /* RESTCalls.m */; };
 		1F564A261D3FFD2B004C19EC /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A241D3FFD2B004C19EC /* Utilities.m */; };
 		1F564A281D3FFE55004C19EC /* capturedJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A271D3FFE55004C19EC /* capturedJSON.txt */; };
-		1F564A2C1D3FFFD3004C19EC /* TextViewProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A2A1D3FFFD3004C19EC /* TextViewProfileCell.m */; };
+		1F564A2C1D3FFFD3004C19EC /* imgurCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F564A2A1D3FFFD3004C19EC /* imgurCell.m */; };
 		1F564A2F1D40038A004C19EC /* Shrimp153.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A2E1D40038A004C19EC /* Shrimp153.png */; };
-		1F564A571D401846004C19EC /* TextViewProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A561D401846004C19EC /* TextViewProfileCell.xib */; };
+		1F564A571D401846004C19EC /* imgurCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F564A561D401846004C19EC /* imgurCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		1F3E598C1D41184A0036E8F2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		1F3E599C1D415AFC0036E8F2 /* checkbox_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_bg.png; sourceTree = "<group>"; };
 		1F3E599D1D415AFC0036E8F2 /* checkbox_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_hl.png; sourceTree = "<group>"; };
+		1F3E59A01D425DB50036E8F2 /* NSFW.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NSFW.jpg; sourceTree = "<group>"; };
 		1F5649FA1D3FFB36004C19EC /* TelmedIQApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelmedIQApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5649FE1D3FFB36004C19EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F564A001D3FFB36004C19EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,10 +70,10 @@
 		1F564A231D3FFD2B004C19EC /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		1F564A241D3FFD2B004C19EC /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		1F564A271D3FFE55004C19EC /* capturedJSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = capturedJSON.txt; sourceTree = "<group>"; };
-		1F564A291D3FFFD3004C19EC /* TextViewProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewProfileCell.h; sourceTree = "<group>"; };
-		1F564A2A1D3FFFD3004C19EC /* TextViewProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewProfileCell.m; sourceTree = "<group>"; };
+		1F564A291D3FFFD3004C19EC /* imgurCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgurCell.h; sourceTree = "<group>"; };
+		1F564A2A1D3FFFD3004C19EC /* imgurCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imgurCell.m; sourceTree = "<group>"; };
 		1F564A2E1D40038A004C19EC /* Shrimp153.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shrimp153.png; sourceTree = "<group>"; };
-		1F564A561D401846004C19EC /* TextViewProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewProfileCell.xib; sourceTree = "<group>"; };
+		1F564A561D401846004C19EC /* imgurCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imgurCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		1F3E59961D4158550036E8F2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1F3E59A01D425DB50036E8F2 /* NSFW.jpg */,
 				1F3E599C1D415AFC0036E8F2 /* checkbox_bg.png */,
 				1F3E599D1D415AFC0036E8F2 /* checkbox_hl.png */,
 				1F564A2E1D40038A004C19EC /* Shrimp153.png */,
@@ -111,9 +114,9 @@
 				1F564A191D3FFCDE004C19EC /* BaseProfileCell.h */,
 				1F564A1A1D3FFCDE004C19EC /* BaseProfileCell.m */,
 				1F564A1B1D3FFCDE004C19EC /* BaseProfileCell.xib */,
-				1F564A291D3FFFD3004C19EC /* TextViewProfileCell.h */,
-				1F564A2A1D3FFFD3004C19EC /* TextViewProfileCell.m */,
-				1F564A561D401846004C19EC /* TextViewProfileCell.xib */,
+				1F564A291D3FFFD3004C19EC /* imgurCell.h */,
+				1F564A2A1D3FFFD3004C19EC /* imgurCell.m */,
+				1F564A561D401846004C19EC /* imgurCell.xib */,
 			);
 			name = "Custom Cells";
 			sourceTree = "<group>";
@@ -229,10 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F564A281D3FFE55004C19EC /* capturedJSON.txt in Resources */,
-				1F564A571D401846004C19EC /* TextViewProfileCell.xib in Resources */,
+				1F564A571D401846004C19EC /* imgurCell.xib in Resources */,
 				1F564A101D3FFB36004C19EC /* LaunchScreen.storyboard in Resources */,
 				1F564A0D1D3FFB36004C19EC /* Assets.xcassets in Resources */,
 				1F3E599E1D415AFC0036E8F2 /* checkbox_bg.png in Resources */,
+				1F3E59A11D425DB50036E8F2 /* NSFW.jpg in Resources */,
 				1F564A2F1D40038A004C19EC /* Shrimp153.png in Resources */,
 				1F3E599F1D415AFC0036E8F2 /* checkbox_hl.png in Resources */,
 				1F564A1F1D3FFCDE004C19EC /* BaseProfileCell.xib in Resources */,
@@ -265,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F564A021D3FFB36004C19EC /* AppDelegate.m in Sources */,
-				1F564A2C1D3FFFD3004C19EC /* TextViewProfileCell.m in Sources */,
+				1F564A2C1D3FFFD3004C19EC /* imgurCell.m in Sources */,
 				1F564A051D3FFB36004C19EC /* MasterViewController.m in Sources */,
 				1F564A261D3FFD2B004C19EC /* Utilities.m in Sources */,
 				1F564A1E1D3FFCDE004C19EC /* BaseProfileCell.m in Sources */,

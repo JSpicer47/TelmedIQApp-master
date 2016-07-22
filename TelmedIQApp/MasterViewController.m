@@ -12,7 +12,7 @@
 #import "DetailViewController.h"
 #import "RESTCalls.h"
 #import "Utilities.h"
-#import "TextViewProfileCell.h"
+#import "imgurCell.h"
 
 @implementation imgObject
 // None needed
@@ -36,7 +36,7 @@
 
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 
-    [self.tableView registerNib:[UINib nibWithNibName:@"TextViewProfileCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"imgurCell" bundle:nil] forCellReuseIdentifier:@"imgurCell"];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(goToDetailsView:) name:@"goToDetailsView" object:nil];
     
@@ -92,7 +92,7 @@
 - (void)goToDetailsView:(NSNotification*)inNotification
 {
     NSInteger tag = [[inNotification object] integerValue];
-    DLog(@"tag = %ld", (long)tag);
+    //DLog(@"tag = %ld", (long)tag);
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:tag inSection:0] animated:NO scrollPosition:0];
     [self performSegueWithIdentifier:@"showDetails" sender:self];
 }
@@ -118,33 +118,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TextViewProfileCell *cell = (TextViewProfileCell *)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    imgurCell *cell = (imgurCell *)[tableView dequeueReusableCellWithIdentifier:@"imgurCell"];
     
     cell.tag = indexPath.row;
     
     imgObject *object = galleryArray[indexPath.row];
     [cell setUpCell:object];
-    
-    if (object.mySmallImage != nil)
-    {
-        //DLog(@"I got an image for this one...");
-        UIImage *goodImage = [UIImage imageWithData:object.mySmallImage];
-        cell.myImage.image = goodImage;
-        [cell.active stopAnimating];
-    }
-/*
-    if (galleryImages.count > 0 && indexPath.row <galleryImages.count && [galleryImages objectAtIndex:indexPath.row] != nil)
-    {
-        cell.myImage.image = [galleryImages objectAtIndex:indexPath.row];
-        [cell.active stopAnimating];
-    }
-*/
+
     return cell;
 }
 
 -(void)fetchData
 {
-    DLog(@"TelmedIQApp::fetchData");
+    //DLog(@"TelmedIQApp::fetchData");
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(void)
     {
@@ -164,6 +150,15 @@
                     {
                         gallery = [dict objectForKey:@"data"];
                     }
+                    else
+                    {
+                        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"No data returned from service."
+                                                                             message:@"Perhaps we've reached our daily limit?"
+                                                                            delegate:nil
+                                                                   cancelButtonTitle:@"OK"
+                                                                   otherButtonTitles: nil];
+                        [alertView show];
+                    }
                 }
             }
         }
@@ -171,7 +166,6 @@
         // now we must write on the main thread
         dispatch_async(dispatch_get_main_queue(),
         ^{
-            BOOL weAddedSomething = NO;
             RLMRealm *realm = [RLMRealm defaultRealm];
             [realm beginWriteTransaction];
             for (NSInteger index = 0; index < gallery.count; index++)
@@ -202,103 +196,15 @@
                                                                @"datetime"      :datetime,
                                                                @"id"            :[dict objectForKey:@"id"],
                                                                }];
-                    weAddedSomething = YES;
                 }
             }
             [realm commitWriteTransaction];
             
-            if (weAddedSomething)
-            {
-                [self fetchImages];
-            }
-            
             [theBigSpinner setHidden:YES];
             [self.tableView reloadData];
-            
         });
 
     });
-}
-
-// Fetch the images in the background
-//
-- (void)fetchImages
-{
-    for (NSInteger i = 0; i < [galleryArray count]; i++)
-    {
-        imgObject *dict = [galleryArray objectAtIndex:i];
-        NSString *urlStr = dict.link;
-        BOOL nsfw = [dict.nsfw boolValue];
-        DLog(@"[%ld] link = %@, nsfw = %d", (long)i, urlStr, nsfw);
-
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(void)
-        {
-
-                // if our link has a .gif or .jpg on the end,
-                // we can get a thumbnail.
-                // if it does not, we won't get anything at all,
-                // so just put the stock image in it.
-                // if it's NSFW we put up a stock image instead
-                // I guess we would actually have an image for this
-                // we will use another just so that we know
-                // we don't fetch the image if it's NSFW
-
-                UIImage *defaultImage = [UIImage imageNamed:@"Shrimp153.png"];
-                BOOL good = YES;
-
-                if (nsfw == YES)
-                {
-                    good = NO;
-                    defaultImage = [UIImage imageNamed:@"img02.jpg"];
-                }
-
-                UIImage *goodImage = nil;
-                NSString *fileType = nil;
-                NSData *data0;
-                if (urlStr != nil && good)
-                {
-                    NSString *name = [urlStr lastPathComponent];
-                    //DLog(@"name = %@", name);
-                    NSArray *bits = [name componentsSeparatedByString:@"."];
-                    // if it has an ending at all, we're good
-                    if ([bits count] > 1)
-                    {
-                        NSString *newStr = [NSString stringWithFormat:@"http://i.imgur.com/%@b.%@", [bits objectAtIndex:0], [bits objectAtIndex:1]];
-                        fileType = [bits objectAtIndex:1];
-                        NSURL *theURL = [NSURL URLWithString:newStr];
-                        data0 = [NSData dataWithContentsOfURL:theURL];
-                        
-                        goodImage = [UIImage imageWithData:data0];
-                        if (goodImage == nil)
-                        {
-                            good = NO;
-                        }
-                    }
-                    else
-                    {
-                        //DLog(@"it's not something we can load!");
-                        good = NO;
-                    }
-                }
-
-                if (good == NO)
-                {
-                    data0 = UIImagePNGRepresentation(defaultImage);
-                }
-
-                dispatch_async(dispatch_get_main_queue(),
-                ^{
-                    [self.tableView reloadData];
-                    imgObject *object = galleryArray[i];
-                    RLMRealm *realm = [RLMRealm defaultRealm];
-                    [realm beginWriteTransaction];
-                    object.mySmallImage = data0;
-                    [realm commitWriteTransaction];
-                });
- 
-        });
-        
-    }
 }
 
 @end
