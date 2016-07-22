@@ -121,6 +121,7 @@
     imgurCell *cell = (imgurCell *)[tableView dequeueReusableCellWithIdentifier:@"imgurCell"];
     
     cell.tag = indexPath.row;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     imgObject *object = galleryArray[indexPath.row];
     [cell setUpCell:object];
